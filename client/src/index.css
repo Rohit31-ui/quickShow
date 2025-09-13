@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+/* Custom Theme Colors (Tailwind CSS v3.4+ with @theme directive) */
+@theme {
+  --color-primary: #F84565;
+  --color-primary-dull: #D63854;
+}
+
+* {
+  font-family: "Outfit", sans-serif;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #787777 #1e1e1e;
+}
+
+body {
+  color: white;
+  background-color: #09090B;
+}
+
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+/* Remove number input arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Invert calendar picker icon (for dark mode) */
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
